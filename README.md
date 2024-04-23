@@ -6,7 +6,7 @@
 
 - git clone
 ```
-https://github.com/IvanRiel/Auto-nmap-scan.git
+git clone https://github.com/IvanRiel/Auto-nmap-scan
 ```
 - give executable permission
 ```
