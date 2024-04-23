@@ -8,6 +8,10 @@
 ```
 git clone https://github.com/IvanRiel/Auto-nmap-scan
 ```
+- go to the directory
+```
+cd Auto-nmap-scan
+```
 - give executable permission
 ```
 chmod +x auto auto_nmap.sh
