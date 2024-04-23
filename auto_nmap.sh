@@ -1,8 +1,6 @@
 #!/bin/bash
 
-
 # Print the options with color
-                         
 echo -e "\e[1;34mA = basic scan\e[0m"
 echo -e "\e[1;34mB = port scan\e[0m"
 echo -e "\e[1;34mC = version scan\e[0m"
@@ -15,11 +13,15 @@ echo -e "\e[1;34mI = IP protocol scan\e[0m"
 echo -e "\e[1;34mJ = NULL scan\e[0m"
 echo -e "\e[1;34mK = FIN scan\e[0m"
 echo -e "\e[1;34mL = XMAS scan\e[0m"
+echo -e "\e[1;34mM = IP address scan\e[0m"
+echo -e "\e[1;34mN = port scanning with IP\e[0m"
+echo -e "\e[1;34mO = OS detection with IP\e[0m"
+echo -e "\e[1;34mP = version scanning with IP\e[0m"
+echo -e "\e[1;34mQ = port scanning\e[0m"
 
 read -p "option=: " op
 
-if [[ $op == "A" ]] || [[ $op == "B" ]] || [[ $op == "C" ]] || [[ $op == "D" ]] || [[ $op == "E" ]] || [[ $op == "F" ]] || [[ $op == "G" ]] || [[ $op == "H" ]] || [[ $op == "I" ]] || [[ $op == "J" ]] || [[ $op == "K" ]] || [[ $op == "L" ]]
-then
+if [[ $op == "A" || $op == "B" || $op == "C" || $op == "D" || $op == "E" || $op == "F" || $op == "G" || $op == "H" || $op == "I" || $op == "J" || $op == "K" || $op == "L" || $op == "M" || $op == "N" || $op == "O" || $op == "P" || $op == "Q" ]]; then
     read -p "Enter IP address for scan: " ip
     case $op in
         A) echo -e "\e[1;32mNmap starting basic scan on $ip\e[0m" && nmap -vv $ip;;
@@ -34,8 +36,12 @@ then
         J) echo -e "\e[1;32mNmap starting NULL scan on $ip\e[0m" && nmap -sN $ip;;
         K) echo -e "\e[1;32mNmap starting FIN scan on $ip\e[0m" && nmap -sF $ip;;
         L) echo -e "\e[1;32mNmap starting XMAS scan on $ip\e[0m" && nmap -sX $ip;;
-        *) echo "invalid"
+        M) echo -e "\e[1;32mNmap starting IP address scan on $ip\e[0m" && nmap -sL $ip;;
+        N) echo -e "\e[1;32mNmap starting port scanning with IP $ip\e[0m" && nmap -sP -vv $ip;;
+        O) echo -e "\e[1;32mNmap starting OS detection with IP $ip\e[0m" && nmap -O $ip;;
+        P) echo -e "\e[1;32mNmap starting version scanning with IP $ip\e[0m" && nmap -sV -vv $ip;;
+        Q) echo -e "\e[1;32mNmap starting port scanning\e[0m" && nmap -sS -vv $ip;;
     esac
 else
-    echo "invalid"
+    echo -e "\e[1;31mInvalid option\e[0m"
 fi
