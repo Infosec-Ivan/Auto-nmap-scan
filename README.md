@@ -1,4 +1,4 @@
-h# Auto-nmap-scan
+# Auto-nmap-scan
 <i>"This script helps you quickly scan your network using Nmap, saving you time and effort.</i>
 
 
@@ -28,7 +28,7 @@ chmod +x auto auto_nmap.sh
 ![Screenshot_20240423_145753](https://github.com/IvanRiel/Auto-nmap-scan/assets/166489209/1809b3bd-9bdf-4add-b1b7-635da0a398ab)
 
 
-## created by bash
+## created with bash
 
 [![Bash][bash-shield]][bash-url]
 
