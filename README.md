@@ -16,3 +16,5 @@ chmod +x auto auto_nmap.sh
 ```
 ./auto_nmap.sh
 ```
+<b><h1><p align="center">images</p></h1></b>
+![Screenshot_20240423_142810](https://github.com/IvanRiel/Auto-nmap-scan/assets/166489209/c714fbd1-e3e4-4f6a-a0b3-bc6d99646e5d)
