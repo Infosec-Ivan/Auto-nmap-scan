@@ -37,7 +37,7 @@ chmod +x auto auto_nmap.sh
 sudo apt-get install --reinstall ca-certificates
 ```
 
-this commond will fix that issue
+this commond will fix that issue first run this after than git clone
 
 
 
