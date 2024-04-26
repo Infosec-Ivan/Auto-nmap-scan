@@ -28,6 +28,20 @@ chmod +x auto auto_nmap.sh
 ![Screenshot_20240423_145753](https://github.com/IvanRiel/Auto-nmap-scan/assets/166489209/1809b3bd-9bdf-4add-b1b7-635da0a398ab)
 
 
+## If u get this error
+
+
+![IMG_3564](https://github.com/IvanRiel/THE-SECTER/assets/166489209/750e9e28-7dec-421f-8910-0e6e049f0913)
+
+```
+sudo apt-get install --reinstall ca-certificates
+```
+
+this commond will fix that issue
+
+
+
+
 ## created with bash
 
 [![Bash][bash-shield]][bash-url]
